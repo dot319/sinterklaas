@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Wishlist;
 use Illuminate\Http\Request;
+use Auth;
 
 class WishlistController extends Controller
 {
@@ -35,11 +36,9 @@ class WishlistController extends Controller
      */
     public function store(Request $request)
     {
-        $varia = "varia";
-        var_dump($varia);
-        // $properties = ['name' => 'Mijn verlanglijstje', 'user_id' => Auth::id()];
-        // $wishlist = Wishlist::create($properties);
-        // return redirect("/wishlists/$wishlist->id/edit");
+        $properties = ['name' => 'Mijn verlanglijstje', 'user_id' => Auth::id()];
+        $wishlist = Wishlist::create($properties);
+        return redirect("/wishlists/$wishlist->id/edit");
     }
 
     /**
