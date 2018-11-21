@@ -24,7 +24,7 @@ class WishlistController extends Controller
      */
     public function create()
     {
-        //
+        return redirect('/wishlists/store');
     }
 
     /**

@@ -17,7 +17,7 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 <li class="nav-item">
-                    <a class="nav-link" href="/lists/create">Maak een verlanglijstje</a>
+                    <a class="nav-link" href="/wishlists/create">Maak een verlanglijstje</a>
                 </li>
                 @guest
                     <li class="nav-item">
