@@ -15,7 +15,9 @@ Visit my <a href="http://www.doriekeberends.nl">Postfolio</a>.</p>
 - Prioritize functionality, bonus points for design and creativity
 - Deadline: Friday November 23st, midday
 
-<b>Wednesday November 21st, 2018<b>
+<h2>Progress:</h2>
+
+<h3>Wednesday November 21st, 2018</h3>
 - Created Vanilla Laravel Project
 - Created Trello board (<a href="https://trello.com/b/jt0bSx8M/sinterklaas">View</a>)
 - Created Github Repository 
