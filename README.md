@@ -5,21 +5,21 @@ See the Trello board <a href="https://trello.com/b/jt0bSx8M/sinterklaas">here</a
 Visit my <a href="http://www.doriekeberends.nl">Postfolio</a>.</p>
 
 <h2>Requirements:</h2>
-- Made in Laravel
-- Have at least 2 models and at least 1 relationship
-- Have at least 3 interactive pages + 1 about page
-- Use at least 1 AJAX component
-- Use part Bootstrap, part own styling
-- Website is deployed 
-- Code is on github
-- Prioritize functionality, bonus points for design and creativity
-- Deadline: Friday November 23st, midday
+- Made in Laravel<br />
+- Have at least 2 models and at least 1 relationship<br />
+- Have at least 3 interactive pages + 1 about page<br />
+- Use at least 1 AJAX component<br />
+- Use part Bootstrap, part own styling<br />
+- Website is deployed <br />
+- Code is on github<br />
+- Prioritize functionality, bonus points for design and creativity<br />
+- Deadline: Friday November 23st, midday<br />
 
 <h2>Progress:</h2>
 
 <h3>Wednesday November 21st, 2018</h3>
-- Created Vanilla Laravel Project
-- Created Trello board (<a href="https://trello.com/b/jt0bSx8M/sinterklaas">View</a>)
-- Created Github Repository 
-- Deployed through Heroku (<a href="https://murmuring-woodland-16654.herokuapp.com/">Here</a>)
-- Created README.md
+- Created Vanilla Laravel Project<br />
+- Created Trello board (<a href="https://trello.com/b/jt0bSx8M/sinterklaas">View</a>)<br />
+- Created Github Repository <br />
+- Deployed through Heroku (<a href="https://murmuring-woodland-16654.herokuapp.com/">Here</a>)<br />
+- Created README.md<br />
