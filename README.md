@@ -23,6 +23,6 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 - Created Github Repository <br />
 - Deployed through Heroku (<a href="https://murmuring-woodland-16654.herokuapp.com/">Here</a>)<br />
 - Created README.md<br />
-- Implemented Laravel's native registration and login system
-- Put the navbar in its own file
-- Created wishlist model and a button for making a new one that then returns the edit page for the newly created wishlist
+- Implemented Laravel's native registration and login system<br />
+- Put the navbar in its own file<br />
+- Created wishlist model and a button for making a new one that then returns the edit page for the newly created wishlist<br />
