@@ -19,5 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/wishlists/store', 'WishlistController@store');
+Route::get('/wishlists/store', 'WishlistController@store')->middleware('auth');
 Route::get('/wishlists/{wishlist}/edit', 'WishlistController@edit');
