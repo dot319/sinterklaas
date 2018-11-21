@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/wishlists/store', 'WishlistController@store');
+Route::get('/wishlists/{wishlist}/edit', 'WishlistController@edit');

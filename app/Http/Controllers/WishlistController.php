@@ -60,7 +60,7 @@ class WishlistController extends Controller
      */
     public function edit(Wishlist $wishlist)
     {
-        //
+        return view('wishlists/edit', ['wishlist' => $wishlist]);
     }
 
     /**

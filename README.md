@@ -25,3 +25,4 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 - Created README.md<br />
 - Implemented Laravel's native registration and login system
 - Put the navbar in its own file
+- Created wishlist model and a button for making a new one that then returns the edit page for the newly created wishlist
