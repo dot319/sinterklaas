@@ -24,3 +24,4 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 - Deployed through Heroku (<a href="https://murmuring-woodland-16654.herokuapp.com/">Here</a>)<br />
 - Created README.md<br />
 - Implemented Laravel's native registration and login system
+- Put the navbar in its own file
