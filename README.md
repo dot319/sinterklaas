@@ -1,8 +1,8 @@
 <h1>Sinterklaas wishlists</h1>
-<p>A website that enables children to create and share wishlists for Sinterklaar.<br />
+<p>A website that enables children to create and share wishlists for Sinterklaas.<br />
 Visit the website <a href="https://murmuring-woodland-16654.herokuapp.com/">here</a>.<br />
 See the Trello board <a href="https://trello.com/b/jt0bSx8M/sinterklaas">here</a>.<br />
-Visit my <a href="http://www.doriekeberends.nl">Postfolio</a>.</p>
+Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 
 <h2>Requirements:</h2>
 - Made in Laravel<br />
