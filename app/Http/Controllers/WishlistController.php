@@ -24,7 +24,7 @@ class WishlistController extends Controller
      */
     public function create()
     {
-        return redirect('/wishlists/store');
+        //
     }
 
     /**
@@ -35,7 +35,11 @@ class WishlistController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $varia = "varia";
+        var_dump($varia);
+        // $properties = ['name' => 'Mijn verlanglijstje', 'user_id' => Auth::id()];
+        // $wishlist = Wishlist::create($properties);
+        // return redirect("/wishlists/$wishlist->id/edit");
     }
 
     /**

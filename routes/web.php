@@ -19,4 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('wishlists', 'WishlistController');
+Route::get('/wishlists/store', 'WishlistController@store');
