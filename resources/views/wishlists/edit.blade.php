@@ -14,18 +14,16 @@
             </div>
             <div class="card mb-4">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        Item 1
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </li>
-                    <li class="list-group-item">
-                        Item 2
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </li>
+                    <div class="wishes-list">
+                        @foreach ($wishlist->wishes as $wish)
+                            <li class="list-group-item">
+                                {{ $wish->name }}
+                                <button type="button" class="close" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </li>
+                        @endforeach
+                    </div>
                     <li class="list-group-item">
                         <form>
                             <input class="form-control" type="text" placeholder="Voeg iets toe">
