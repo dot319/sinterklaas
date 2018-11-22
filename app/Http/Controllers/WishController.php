@@ -43,7 +43,7 @@ class WishController extends Controller
 
         Wish::create($validated);
 
-        $wishlists = Wishlist::where('id', 2)->get();
+        $wishlists = Wishlist::where('id', request('wishlist_id'))->get();
 
         return view('wishes/index', ['wishlists' => $wishlists]);
     }
