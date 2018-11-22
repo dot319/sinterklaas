@@ -90,6 +90,8 @@ class WishController extends Controller
      */
     public function destroy(Wish $wish)
     {
-        //
+        $wish->delete();
+        $wishlists = Wishlist::where('id', $wish->wishlist_id)->get();
+        return view('wishes/index', ['wishlists' => $wishlists]);
     }
 }
