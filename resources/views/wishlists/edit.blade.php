@@ -19,7 +19,7 @@ function addWish(event, wishlistID) {
         xhttp.onreadystatechange = function() {
             console.log("xhttp state changed");
             if (this.readyState == 4 && this.status == 200) {
-                console.log("Check!");
+                document.getElementById("wishes-list").innerHTML = this.responseText;
             }                    
         }
         xhttp.open('GET', '/wishes/store?wishlist_id=' + wishlistID + '&name=' + newWish , true);
@@ -41,7 +41,7 @@ function addWish(event, wishlistID) {
             </div>
             <div class="card mb-4">
                 <ul class="list-group list-group-flush">
-                    <div class="wishes-list">
+                    <div id="wishes-list">
                         @foreach ($wishlist->wishes as $wish)
                             <li class="list-group-item">
                                 {{ $wish->name }}

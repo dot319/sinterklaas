@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Wish;
+use App\Wishlist;
 use Illuminate\Http\Request;
 
 class WishController extends Controller
@@ -42,8 +43,9 @@ class WishController extends Controller
 
         Wish::create($validated);
 
-        return view('wishes/index');
+        $wishlists = Wishlist::where('id', 2)->get();
 
+        return view('wishes/index', ['wishlists' => $wishlists]);
     }
 
     /**
