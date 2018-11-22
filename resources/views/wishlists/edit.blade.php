@@ -3,21 +3,14 @@
 @section('content')
 <script>
 function addWish(event, wishlistID) {
-    console.log("addWish() is fired");
     if (event.keyCode == 13) {
-        console.log("keyCode is 13");
-        //here i should make a string that contains all data I want to send to /wishes. Example: "new-wish=Koptelefoon&wishlist_id=2"
         var newWish = document.getElementById("new-wish").value;
         if (window.XMLHttpRequest) {
-            console.log("XMLHttpRequest is available");
             var xhttp = new XMLHttpRequest();
         } else {
-            console.log("XMLHttpRequest unavailable, user Active X Object instead");
             var xhttp = new ActiveXObject();
         }
-        console.log("Is this reached?");
         xhttp.onreadystatechange = function() {
-            console.log("xhttp state changed");
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("wishes-list").innerHTML = this.responseText;
             }                    
@@ -27,8 +20,19 @@ function addWish(event, wishlistID) {
     }   
 }
 
-function deleteWish() {
-    alert("Check!");
+function deleteWish(wishID) {
+    if (window.XMLHttpRequest) {
+        var xhttp = new XMLHttpRequest();
+    } else {
+        var xhttp = new ActiveXObject();
+    }
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("wishes-list").innerHTML = this.responseText;
+        }                    
+    }
+    xhttp.open('GET', '/wishes/' + wishID + '/delete' , true);
+    xhttp.send();
 }
 
 </script>
