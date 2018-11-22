@@ -18,6 +18,7 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 <h2>Progress:</h2>
 
 <h3>Thursday November 22nd, 2018</h3>
+- Made layout and filled out wishlists/edit.blade.php, pull content from wishlist table
 
 <h3>Wednesday November 21st, 2018</h3>
 - Created Vanilla Laravel Project<br />
