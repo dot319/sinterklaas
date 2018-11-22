@@ -1,6 +1,14 @@
 @extends('layouts/app')
 
 @section('content')
+<script>
+function addWish(event) {
+    if (event.keyCode == 13) {
+        alert("Check");
+    }   
+}
+</script>
+
 <div class="container">
     <div class="card w-75 mx-auto">
         <div class="card-body">
@@ -26,7 +34,7 @@
                     </div>
                     <li class="list-group-item">
                         <form>
-                            <input class="form-control" type="text" placeholder="Voeg iets toe">
+                            <input class="form-control" type="text" placeholder="Voeg iets toe" onkeyup="addWish(event)">
                         </form>
                     </li>
                 </ul>
