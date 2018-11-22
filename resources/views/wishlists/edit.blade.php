@@ -2,6 +2,24 @@
 
 @section('content')
 <script>
+function editName(event) {
+    if (event.keyCode == 13) {
+        var wishlistTitle = document.getElementById('wishlist-title').value;
+        if (window.XMLHttpRequest) {
+            var xhttp = new XMLHttpRequest();
+        } else {
+            var xhttp = new ActiveXObject();
+        }
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                //
+            }                    
+        }
+        xhttp.open('GET', '/wishlists/' + $wishlist->id + '/update?name=' + wishlistTitle, true);
+        xhttp.send();
+    }
+}
+
 function addWish(event, wishlistID) {
     if (event.keyCode == 13) {
         var newWish = document.getElementById("new-wish").value;
@@ -40,7 +58,7 @@ function deleteWish(wishID) {
 <div class="container">
     <div class="card w-75 mx-auto">
         <div class="card-body">
-            <input class="form-control text-center mb-4" type="text" placeholder="Geef je verlanglijstje een naam" value="{{ $wishlist->name }}">
+            <input id="wishlist-title" class="form-control text-center mb-4" type="text" placeholder="Geef je verlanglijstje een naam" value="{{ $wishlist->name }}" onkeyup="editName(event)">
             <div class="card mb-4">
                 <div class="card-body">
                     <p>Lieve sinterklaas,</p>

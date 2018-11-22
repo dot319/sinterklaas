@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/wishlists/store', 'WishlistController@store')->middleware('auth');
 Route::get('/wishlists/{wishlist}/edit', 'WishlistController@edit')->middleware('auth');
+Route::get('/wishlists/{wishlist}/update', 'WishlistController@update')->middleware('auth');
 
 Route::get('/wishes/store', 'WishController@store')->middleware('auth');
 Route::get('/wishes/{wish}/delete', 'WishController@destroy')->middleware('auth');
