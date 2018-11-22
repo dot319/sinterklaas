@@ -8,7 +8,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <p>Lieve sinterklaas,</p>
-                    <textarea class="form-control" placeholder="Schrijf een brief aan sinterklaas">Dit is mijn verlanglijstje.</textarea>
+                    <textarea class="form-control" placeholder="Schrijf een brief aan sinterklaas">{{ $wishlist->letter }}</textarea>
                     <p>Liefs, Dorieke</p>
                 </div>
             </div>
