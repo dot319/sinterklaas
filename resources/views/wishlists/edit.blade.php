@@ -4,7 +4,7 @@
 <div class="container">
     <div class="card w-75 mx-auto">
         <div class="card-body">
-            <input class="form-control text-center mb-4" type="text" placeholder="Geef je verlanglijstje een naam" value="Verlanglijstje van Dorieke">
+            <input class="form-control text-center mb-4" type="text" placeholder="Geef je verlanglijstje een naam" value="{{ $wishlist->name }}">
             <div class="card mb-4">
                 <div class="card-body">
                     <p>Lieve sinterklaas,</p>
