@@ -20,4 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/wishlists/store', 'WishlistController@store')->middleware('auth');
-Route::get('/wishlists/{wishlist}/edit', 'WishlistController@edit');
+Route::get('/wishlists/{wishlist}/edit', 'WishlistController@edit')->middleware('auth');
+
+Route::get('/wishes/store', 'WishController@store');

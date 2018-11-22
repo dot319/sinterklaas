@@ -35,7 +35,15 @@ class WishController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = request()->validate([
+            'wishlist_id' => ['integer'],
+            'name' => ['required']
+        ]);
+
+        Wish::create($validated);
+
+        return view('wishes/index');
+
     }
 
     /**

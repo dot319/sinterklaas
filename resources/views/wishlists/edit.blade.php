@@ -2,9 +2,28 @@
 
 @section('content')
 <script>
-function addWish(event) {
+function addWish(event, wishlistID) {
+    console.log("addWish() is fired");
     if (event.keyCode == 13) {
-        alert("Check");
+        console.log("keyCode is 13");
+        //here i should make a string that contains all data I want to send to /wishes. Example: "new-wish=Koptelefoon&wishlist_id=2"
+        var newWish = document.getElementById("new-wish").value;
+        if (window.XMLHttpRequest) {
+            console.log("XMLHttpRequest is available");
+            var xhttp = new XMLHttpRequest();
+        } else {
+            console.log("XMLHttpRequest unavailable, user Active X Object instead");
+            var xhttp = new ActiveXObject();
+        }
+        console.log("Is this reached?");
+        xhttp.onreadystatechange = function() {
+            console.log("xhttp state changed");
+            if (this.readyState == 4 && this.status == 200) {
+                console.log("Check!");
+            }                    
+        }
+        xhttp.open('GET', '/wishes/store?wishlist_id=' + wishlistID + '&name=' + newWish , true);
+        xhttp.send();
     }   
 }
 </script>
@@ -33,9 +52,7 @@ function addWish(event) {
                         @endforeach
                     </div>
                     <li class="list-group-item">
-                        <form>
-                            <input class="form-control" type="text" placeholder="Voeg iets toe" onkeyup="addWish(event)">
-                        </form>
+                        <input id="new-wish" class="form-control" type="text" placeholder="Voeg iets toe" onkeyup="addWish(event, {{ $wishlist->id }})">
                     </li>
                 </ul>
             </div>
