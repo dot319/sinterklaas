@@ -7,4 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Wish extends Model
 {
     protected $guarded = [];
+
+    public function wishlist() {
+        return $this->belongsTo('App\Wishlist');
+    }
 }
