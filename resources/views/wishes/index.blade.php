@@ -2,7 +2,7 @@
     @foreach($wishlist->wishes as $wish)
         <li class="list-group-item">
             {{ $wish->name }}
-            <button type="button" class="close" aria-label="Close">
+            <button type="button" class="close" aria-label="Close" onclick="deleteWish()">
                 <span aria-hidden="true">&times;</span>
             </button>
         </li>

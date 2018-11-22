@@ -26,6 +26,11 @@ function addWish(event, wishlistID) {
         xhttp.send();
     }   
 }
+
+function deleteWish() {
+    alert("Check!");
+}
+
 </script>
 
 <div class="container">
@@ -42,14 +47,7 @@ function addWish(event, wishlistID) {
             <div class="card mb-4">
                 <ul class="list-group list-group-flush">
                     <div id="wishes-list">
-                        @foreach ($wishlist->wishes as $wish)
-                            <li class="list-group-item">
-                                {{ $wish->name }}
-                                <button type="button" class="close" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </li>
-                        @endforeach
+                        @include('wishes/index', ['wishlists' => [$wishlist]])
                     </div>
                     <li class="list-group-item">
                         <input id="new-wish" class="form-control" type="text" placeholder="Voeg iets toe" onkeyup="addWish(event, {{ $wishlist->id }})">
