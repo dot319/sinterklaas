@@ -19,9 +19,10 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 
 <h3>Friday November 23rd, 2018<br />
 - User can now edit wishlist letter<br />
-- Sharing link now points to $_REQUEST['SERVER_NAME]/wishlists/{wishlist}
-- Wishlists are now publicly visible through /wishlists/{wishlist}
-- Improved site navigation
+- Sharing link now points to $_REQUEST['SERVER_NAME]/wishlists/{wishlist}<br />
+- Wishlists are now publicly visible through /wishlists/{wishlist}<br />
+- Improved site navigation<br />
+- Added an about page<br />
 
 <h3>Thursday November 22nd, 2018</h3>
 - Made layout and filled out wishlists/edit.blade.php, pull content from wishlist table<br />
