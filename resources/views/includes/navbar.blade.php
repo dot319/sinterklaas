@@ -17,7 +17,10 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 <li class="nav-item">
-                    <a class="nav-link" href="/wishlists/store">Maak een verlanglijstje</a>
+                    <a class="nav-link" href="/about">Over ons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wishlists/store">Nieuw verlanglijstje</a>
                 </li>
                 @guest
                     <li class="nav-item">
