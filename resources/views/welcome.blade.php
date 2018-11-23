@@ -8,13 +8,14 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/main.css') }}">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: rgba(255, 255, 255, 0.8);
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -50,7 +51,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: rgba(255, 255, 255, 0.8);
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -83,7 +84,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Lijstjes voor Sint
+                    Sinterlijstje
                 </div>
                 <div>
                     <a href="/wishlists/store">
