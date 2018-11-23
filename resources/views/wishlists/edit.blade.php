@@ -90,7 +90,7 @@ function deleteWish(wishID) {
                 <div class="card-body">
                     <p>Lieve sinterklaas,</p>
                     <textarea id="wishlist-letter" class="form-control" placeholder="Schrijf een brief aan sinterklaas" onkeyup="editLetter(event, {{ $wishlist->id }})">{{ $wishlist->letter }}</textarea>
-                    <p>Liefs, Dorieke</p>
+                    <p>Liefs, {{ $wishlist->user->name }}</p>
                 </div>
             </div>
             <div class="card mb-4">

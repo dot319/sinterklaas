@@ -20,7 +20,7 @@
                 <div class="card-body">
                     <p>Lieve sinterklaas,</p>
                     <p>{{ $wishlist->letter }}</p>
-                    <p>Liefs, Dorieke</p>
+                    <p>Liefs, {{ $wishlist->user->name }}</p>
                 </div>
             </div>
             <div class="card mb-4">
