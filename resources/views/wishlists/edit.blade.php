@@ -45,6 +45,7 @@ function addWish(event, wishlistID) {
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("wishes-list").innerHTML = this.responseText;
+                document.getElementById("new-wish").value = "";
             }                    
         }
         xhttp.open('GET', '/wishes/store?wishlist_id=' + wishlistID + '&name=' + newWish , true);
@@ -108,7 +109,7 @@ function deleteWish(wishID) {
                         @include('wishes/index', ['wishlists' => [$wishlist]])
                     </div>
                     <li class="list-group-item">
-                        <input id="new-wish" class="form-control" type="text" placeholder="Voeg iets toe" onkeyup="addWish(event, {{ $wishlist->id }})">
+                        <input id="new-wish" class="form-control" type="text" placeholder="Voeg iets toe en druk op enter" onkeyup="addWish(event, {{ $wishlist->id }})">
                     </li>
                 </ul>
             </div>

@@ -15,12 +15,15 @@
                     </a>
                 </div>
             @endif
-            <h1 class="text-center">{{ $wishlist->name }}</h1>
+            <h3 class="text-center">{{ $wishlist->name }}</h3>
             <div class="card mb-4">
                 <div class="card-body">
                     <p>Lieve Sinterklaas,</p>
                     <p>{{ $wishlist->letter }}</p>
-                    <p>Liefs, {{ $wishlist->user->name }}</p>
+                    <div class="d-flex">
+                        <p class="ml-auto mr-5">Liefs, {{ $wishlist->user->name }}</p>
+                    </div>
+
                 </div>
             </div>
             <div class="card mb-4">
