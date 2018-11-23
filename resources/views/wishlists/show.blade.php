@@ -6,7 +6,7 @@
     <div class="card w-75 mx-auto">
         <div class="card-body">
             @if (Auth::id() == $wishlist->user_id)
-                <div>
+                <div class="mb-4">
                     <a href="/wishlists/{{ $wishlist->id }}/edit">
                         <button class="btn btn-primary">Lijstje aanpassen</button>
                     </a>
