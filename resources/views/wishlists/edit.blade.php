@@ -97,7 +97,7 @@ function deleteWish(wishID) {
             <div class="card">
                 <div class="card-body">
                     <p>Gebruik deze link om je lijstje te delen:</p>
-                    <input class="form-control" type="text" value="https://www.ditwordteenlinkdiewerkt.nl">
+                    <input class="form-control" type="text" value="{{ $_SERVER['SERVER_NAME'] }}/wishlists/{{ $wishlist->id }}">
                 </div>
             </div>
         </div>
