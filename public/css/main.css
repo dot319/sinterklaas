@@ -18,3 +18,13 @@ body {
 .dropdown-menu * {
     color: rgba(0, 0, 0, 0.8) !important;
 }
+
+.btn-primary {
+    background-color: #0e1e52 !important;
+    border-color: #0e1e52 !important;
+}
+
+.btn-primary:hover {
+    background-color: #18338b !important;
+    border-color: #18338b !important;
+}
