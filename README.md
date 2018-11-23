@@ -23,6 +23,8 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 - Wishlists are now publicly visible through /wishlists/{wishlist}<br />
 - Improved site navigation<br />
 - Added an about page<br />
+- Added a background image<br />
+- Styled some elements to better fit with the background image<br />
 
 <h3>Thursday November 22nd, 2018</h3>
 - Made layout and filled out wishlists/edit.blade.php, pull content from wishlist table<br />
