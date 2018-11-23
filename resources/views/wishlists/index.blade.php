@@ -10,7 +10,7 @@
             <ul class="list-group">
                 @foreach(Auth::user()->wishlists as $wishlist)
                     <a href="/wishlists/{{ $wishlist->id }}">
-                        <li class="list-group-item">
+                        <li class="list-group-item mb-1">
                             {{$wishlist->name}}
                         </li>    
                     </a>                
