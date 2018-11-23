@@ -21,6 +21,7 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 - User can now edit wishlist letter<br />
 - Sharing link now points to $_REQUEST['SERVER_NAME]/wishlists/{wishlist}
 - Wishlists are now publicly visible through /wishlists/{wishlist}
+- Improved site navigation
 
 <h3>Thursday November 22nd, 2018</h3>
 - Made layout and filled out wishlists/edit.blade.php, pull content from wishlist table<br />
