@@ -72,14 +72,23 @@ class WishlistController extends Controller
      */
     public function update(Request $request, Wishlist $wishlist)
     {
-        $validated = request()->validate([
-            'name' => ['required']
-        ]);
-
-        $wishlist->update($validated);
-
-        return $validated['name'];
-
+        if (request('name')) {
+            $validated = request()->validate([
+                'name' => ['required']
+            ]);
+    
+            $wishlist->update($validated);
+    
+            return $validated['name'];
+        } elseif (request('letter')) {
+            $validated = request()->validate([
+                'letter' => ['required']
+            ]);
+    
+            $wishlist->update($validated);
+    
+            return $validated['letter'];
+        }
     }
 
     /**

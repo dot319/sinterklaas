@@ -20,6 +20,24 @@ function editName(event, wishlistID) {
     }
 }
 
+function editLetter(event, wishlistID) {
+    if (event.keyCode == 13) {
+        var wishlistLetter = document.getElementById('wishlist-letter').value;
+        if (window.XMLHttpRequest) {
+            var xhttp = new XMLHttpRequest();
+        } else {
+            var xhttp = new ActiveXObject();
+        }
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById('wishlist-letter').value = this.responseText;
+            }                    
+        }
+        xhttp.open('GET', '/wishlists/' + wishlistID + '/update?letter=' + wishlistLetter, true);
+        xhttp.send();
+    }
+}
+
 function addWish(event, wishlistID) {
     if (event.keyCode == 13) {
         var newWish = document.getElementById("new-wish").value;
@@ -62,7 +80,7 @@ function deleteWish(wishID) {
             <div class="card mb-4">
                 <div class="card-body">
                     <p>Lieve sinterklaas,</p>
-                    <textarea class="form-control" placeholder="Schrijf een brief aan sinterklaas">{{ $wishlist->letter }}</textarea>
+                    <textarea id="wishlist-letter" class="form-control" placeholder="Schrijf een brief aan sinterklaas" onkeyup="editLetter(event, {{ $wishlist->id }})">{{ $wishlist->letter }}</textarea>
                     <p>Liefs, Dorieke</p>
                 </div>
             </div>

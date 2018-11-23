@@ -22,6 +22,7 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 - In wishlists/edit.blade.php user can add wishes to wishlist through AJAX request<br />
 - User can now delete wishes from his wishlists<br />
 - User can now edit wishlist name<br />
+- User can now edit wishlist letter<br />
 
 <h3>Wednesday November 21st, 2018</h3>
 - Created Vanilla Laravel Project<br />
