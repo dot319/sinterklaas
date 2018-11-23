@@ -2,8 +2,7 @@
 
 @section('content')
 <script>
-function editName(event, wishlistID) {
-    if (event.keyCode == 13) {
+function editName(wishlistID) {
         var wishlistTitle = document.getElementById('wishlist-title').value;
         if (window.XMLHttpRequest) {
             var xhttp = new XMLHttpRequest();
@@ -17,7 +16,6 @@ function editName(event, wishlistID) {
         }
         xhttp.open('GET', '/wishlists/' + wishlistID + '/update?name=' + wishlistTitle, true);
         xhttp.send();
-    }
 }
 
 function editLetter(event, wishlistID) {
@@ -85,7 +83,14 @@ function deleteWish(wishID) {
                     <button class="btn btn-primary">Overzicht van al jouw lijstjes</button>
                 </a>
             </div>
-            <input id="wishlist-title" class="form-control text-center mb-4" type="text" placeholder="Geef je verlanglijstje een naam" value="{{ $wishlist->name }}" onkeyup="editName(event, {{ $wishlist->id }})">
+
+            <div class="input-group mb-4">
+                <input id="wishlist-title" type="text" class="form-control form-control-lg text-center" placeholder="Geef je verlanglijstje een naam" aria-describedby="button-addon2" value="{{ $wishlist->name }}">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="button-addon2" onclick="editName({{ $wishlist->id }})">Opslaan</button>
+                </div>
+            </div>
+            {{-- <input id="wishlist-title" class="form-control form-control-lg text-center mb-4" type="text" placeholder="Geef je verlanglijstje een naam" value="{{ $wishlist->name }}" onkeyup="editName(event, {{ $wishlist->id }})"> --}}
             <div class="card mb-4">
                 <div class="card-body">
                     <p>Lieve sinterklaas,</p>
