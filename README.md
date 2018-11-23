@@ -7,17 +7,17 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 <h2>Requirements:</h2>
 - [v] Made in Laravel <br />
 - [v] Have at least 2 models and at least 1 relationship<br />
-- [&nbsp;&nbsp;] Have at least 3 interactive pages + 1 about page<br />
+- [v] Have at least 3 interactive pages + 1 about page<br />
 - [v] Use at least 1 AJAX component<br />
 - [&nbsp;&nbsp;] Use part Bootstrap, part own styling<br />
 - [v] Website is deployed <br />
 - [v] Code is on github<br />
-- [&nbsp;&nbsp;] Prioritize functionality, bonus points for design and creativity<br />
-- [&nbsp;&nbsp;] Deadline: Friday November 23st, midday<br />
+- [v] Prioritize functionality, bonus points for design and creativity<br />
+- [&nbsp;&nbsp;] Deadline: Friday November 23st, 5pm<br />
 
 <h2>Progress:</h2>
 
-<h3>Friday November 23rd, 2018<br />
+<h3>Friday November 23rd, 2018</h3>
 - User can now edit wishlist letter<br />
 - Sharing link now points to $_REQUEST['SERVER_NAME]/wishlists/{wishlist}<br />
 - Wishlists are now publicly visible through /wishlists/{wishlist}<br />
