@@ -17,12 +17,15 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 
 <h2>Progress:</h2>
 
+<h3>Friday November 23rd, 2018<br />
+- User can now edit wishlist letter<br />
+- Sharing link now points to $_REQUEST['SERVER_NAME]/wishlists/{wishlist}
+
 <h3>Thursday November 22nd, 2018</h3>
 - Made layout and filled out wishlists/edit.blade.php, pull content from wishlist table<br />
 - In wishlists/edit.blade.php user can add wishes to wishlist through AJAX request<br />
 - User can now delete wishes from his wishlists<br />
 - User can now edit wishlist name<br />
-- User can now edit wishlist letter<br />
 
 <h3>Wednesday November 21st, 2018</h3>
 - Created Vanilla Laravel Project<br />
