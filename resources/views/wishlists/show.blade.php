@@ -18,7 +18,7 @@
             <h1 class="text-center">{{ $wishlist->name }}</h1>
             <div class="card mb-4">
                 <div class="card-body">
-                    <p>Lieve sinterklaas,</p>
+                    <p>Lieve Sinterklaas,</p>
                     <p>{{ $wishlist->letter }}</p>
                     <p>Liefs, {{ $wishlist->user->name }}</p>
                 </div>

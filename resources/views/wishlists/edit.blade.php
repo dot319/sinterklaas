@@ -18,8 +18,7 @@ function editName(wishlistID) {
         xhttp.send();
 }
 
-function editLetter(event, wishlistID) {
-    if (event.keyCode == 13) {
+function editLetter(wishlistID) {
         var wishlistLetter = document.getElementById('wishlist-letter').value;
         if (window.XMLHttpRequest) {
             var xhttp = new XMLHttpRequest();
@@ -33,7 +32,6 @@ function editLetter(event, wishlistID) {
         }
         xhttp.open('GET', '/wishlists/' + wishlistID + '/update?letter=' + wishlistLetter, true);
         xhttp.send();
-    }
 }
 
 function addWish(event, wishlistID) {
@@ -87,15 +85,21 @@ function deleteWish(wishID) {
             <div class="input-group mb-4">
                 <input id="wishlist-title" type="text" class="form-control form-control-lg text-center" placeholder="Geef je verlanglijstje een naam" aria-describedby="button-addon2" value="{{ $wishlist->name }}">
                 <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" id="button-addon2" onclick="editName({{ $wishlist->id }})">Opslaan</button>
+                    <button class="btn btn-primary" type="button" id="button-addon2" onclick="editName({{ $wishlist->id }})">Naam opslaan</button>
                 </div>
             </div>
             {{-- <input id="wishlist-title" class="form-control form-control-lg text-center mb-4" type="text" placeholder="Geef je verlanglijstje een naam" value="{{ $wishlist->name }}" onkeyup="editName(event, {{ $wishlist->id }})"> --}}
             <div class="card mb-4">
                 <div class="card-body">
-                    <p>Lieve sinterklaas,</p>
-                    <textarea id="wishlist-letter" class="form-control" placeholder="Schrijf een brief aan sinterklaas" onkeyup="editLetter(event, {{ $wishlist->id }})">{{ $wishlist->letter }}</textarea>
-                    <p>Liefs, {{ $wishlist->user->name }}</p>
+                    <p>Lieve Sinterklaas,</p>
+                    <textarea id="wishlist-letter" class="form-control mb-3" placeholder="Schrijf een brief aan sinterklaas" onkeyup="editLetter(event, {{ $wishlist->id }})">{{ $wishlist->letter }}</textarea>
+                    <div class="d-flex">
+                        <p class="ml-auto mr-5">Liefs, {{ $wishlist->user->name }}</p>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary ml-auto" onclick="editLetter({{ $wishlist->id }})">Brief opslaan</button>
+                    </div>
+                    
                 </div>
             </div>
             <div class="card mb-4">
