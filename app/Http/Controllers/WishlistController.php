@@ -36,7 +36,7 @@ class WishlistController extends Controller
      */
     public function store(Request $request)
     {
-        $properties = ['name' => 'Mijn verlanglijstje', 'user_id' => Auth::id()];
+        $properties = ['name' => 'Nieuw verlanglijstje', 'user_id' => Auth::id(), 'letter' => 'Hieronder ziet u mijn verlanglijstje.'];
         $wishlist = Wishlist::create($properties);
         return redirect("/wishlists/$wishlist->id/edit");
     }
