@@ -9,11 +9,11 @@ Visit my <a href="http://www.doriekeberends.nl">Portfolio</a>.</p>
 - [v] Have at least 2 models and at least 1 relationship<br />
 - [v] Have at least 3 interactive pages + 1 about page<br />
 - [v] Use at least 1 AJAX component<br />
-- [&nbsp;&nbsp;] Use part Bootstrap, part own styling<br />
+- [v] Use part Bootstrap, part own styling<br />
 - [v] Website is deployed <br />
 - [v] Code is on github<br />
 - [v] Prioritize functionality, bonus points for design and creativity<br />
-- [&nbsp;&nbsp;] Deadline: Friday November 23st, 5pm<br />
+- [v] Deadline: Friday November 23st, 5pm<br />
 
 <h2>Progress:</h2>
 
