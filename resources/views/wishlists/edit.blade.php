@@ -76,6 +76,14 @@ function deleteWish(wishID) {
 <div class="container">
     <div class="card w-75 mx-auto">
         <div class="card-body">
+            <div class="mb-4">
+                <a href="/wishlists/{{ $wishlist->id }}">
+                    <button class="btn btn-primary">Bekijk hoe anderen jouw lijstje zien</button>
+                </a>
+                <a href="/wishlists">
+                    <button class="btn btn-primary">Overzicht van al jouw lijstjes</button>
+                </a>
+            </div>
             <input id="wishlist-title" class="form-control text-center mb-4" type="text" placeholder="Geef je verlanglijstje een naam" value="{{ $wishlist->name }}" onkeyup="editName(event, {{ $wishlist->id }})">
             <div class="card mb-4">
                 <div class="card-body">

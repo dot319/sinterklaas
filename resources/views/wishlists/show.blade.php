@@ -6,14 +6,14 @@
     <div class="card w-75 mx-auto">
         <div class="card-body">
             @if (Auth::id() == $wishlist->user_id)
-            <div>
-                <a href="/wishlists/{{ $wishlist->id }}/edit">
-                    <button class="btn btn-primary">Lijstje aanpassen</button>
-                </a>
-                <a href="/wishlists">
-                    <button class="btn btn-primary">Overzicht van al jouw lijstjes</button>
-                </a>
-            </div>
+                <div>
+                    <a href="/wishlists/{{ $wishlist->id }}/edit">
+                        <button class="btn btn-primary">Lijstje aanpassen</button>
+                    </a>
+                    <a href="/wishlists">
+                        <button class="btn btn-primary">Overzicht van al jouw lijstjes</button>
+                    </a>
+                </div>
             @endif
             <h1 class="text-center">{{ $wishlist->name }}</h1>
             <div class="card mb-4">
