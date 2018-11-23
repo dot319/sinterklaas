@@ -29,6 +29,6 @@ class User extends Authenticatable
     ];
 
     public function wishlists() {
-        $this->hasMany('App\Wishlist');
+        return $this->hasMany('App\Wishlist');
     }
 }
