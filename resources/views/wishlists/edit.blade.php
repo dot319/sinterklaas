@@ -76,6 +76,7 @@ function deleteWish(wishID) {
 <div class="container">
     <div class="card w-75 mx-auto">
         <div class="card-body">
+            @if (Auth::id() == $wishlist->user_id)
             <div class="mb-4">
                 <a href="/wishlists/{{ $wishlist->id }}">
                     <button class="btn btn-primary">Bekijk hoe anderen jouw lijstje zien</button>
@@ -108,6 +109,9 @@ function deleteWish(wishID) {
                     <input class="form-control" type="text" value="{{ $_SERVER['SERVER_NAME'] }}/wishlists/{{ $wishlist->id }}">
                 </div>
             </div>
+            @else
+            Je mag dit verlanglijstje niet aanpassen. Je kunt hem wel <a href="/wishlists/{{ $wishlist->id }}">bekijken.</a>
+            @endif
         </div>
     </div>
 </div>
